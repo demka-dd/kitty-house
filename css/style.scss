@@ -1,10 +1,10 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #F8E8E4;
+    background-color: #fff2df;
 }
 .container {
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
 }
 .header-nav {
@@ -30,11 +30,14 @@ body {
     }
 }
 .kitty {
-    background-image: url(../img/main.svg);
+    background-image: url(../img/main-1.png);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    border-radius: 10px;
     .kitty-text {
         display: flex;
         flex-direction: column;
@@ -56,17 +59,20 @@ body {
             font-size: 25px;
         }
         button {
-            margin-top: 20px;
-            background-color: white;
-            background-image: url(../img/paw-1.png);
+            background-image: url(../img/paw-1.svg);
+            background-size: 36px;
             background-repeat: no-repeat;
-            background-size: cover;
-            width: 15%;
-            height: 30%;
+            background-position: 190px 7px;
+            margin-top: 20px;
+            width: 18%;
+            height: 50px;
             border: 0;
             border-radius: 25px;
-            padding: 5px;
+            padding: 15px;
+            text-align: left;
+            font-size: 16px;
         }
+        
     }
 }
 .paw {
@@ -74,3 +80,160 @@ body {
     flex-direction: row;
     justify-content: right;
 }
+
+.adv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -15%;
+    margin-bottom: 50px;
+    h2 {
+        text-align: center;
+        font-size: 36px;
+        font-family: 'Rubik';
+        padding-bottom: 10px;
+    }
+    .adv-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        .adv-items {
+            display: flex;
+            justify-content: center;
+            border-radius: 8px;
+            width: 30%;
+            height: 320px;
+            background-color: white;
+            .text-adv {
+                padding: 8%;
+                color: black;
+                width: 80%;
+                img {
+                    width: 90px;
+                    height: 90px;
+                    padding-bottom: 15px;
+                    padding-top: 10px;
+                }
+                h3 {
+                    color: black;
+                    font-family: 'Rubik';
+                    font-size: 22px;
+                    font-weight: 500;
+                    margin: 0;
+                    padding-top: 7px;
+                    width: 90%;
+                }
+                p{
+                    color: black;
+                    font-family: 'Lato';
+                    font-size: 18px;
+                    font-weight: 400;
+                    padding-top: 5px;
+                    margin: 0;
+                    width: 90%;
+                }
+            }
+        }
+        
+    }
+}
+.fish {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.numbers-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        text-align: center;
+        font-size: 36px;
+        font-family: 'Rubik';
+        padding-bottom: 10px;
+    }
+    .numbers-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        .img-num {
+            margin-right: 32%;
+            position: relative;
+        }
+        .num-info {
+            background-color: white;
+            width: 25%;
+            border-radius: 20px;
+            position: absolute;
+            margin: 70px 0 0 30%;
+            .num-text {
+                padding: 20px 0 20px 50px;
+                h3 {
+                    font-family: 'Rubik';
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 26.07px;
+                }
+                ul {
+                    padding-left: 10px;
+                    li {
+                        font-family: 'Lato';
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 19.2px;
+                        text-align: left;
+                    }
+                    li::marker {
+                        color:hsla(18, 100%, 61%, 1);
+                        font-size: 25px;
+                    }
+                }
+                button {
+                    background-image: url(../img/paw-2.svg);
+                    background-size: 36px;
+                    background-repeat: no-repeat;
+                    background-position: 165px 7px;
+                    background-color: hsla(18, 100%, 61%, 1);
+                    margin-top: 20px;
+                    width: 50%;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 25px;
+                    padding-left: 20px;
+                    text-align: left;
+                    font-size: 16px;
+                    color: white;
+                }
+            }
+        }
+        
+    }
+    
+}
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        text-align: center;
+        font-size: 36px;
+        font-family: 'Rubik';
+        padding-bottom: 10px;
+    }
+    .reviews-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .reviews-items {
+            width: 30%;
+            background: hsla(0, 0%, 100%, 1);
+            p {
+                color: black;
+            }
+        }
+    }
+}
+
+

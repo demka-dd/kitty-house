@@ -1,11 +1,11 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #F8E8E4;
+  background-color: #fff2df;
 }
 
 .container {
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
 }
 
@@ -33,11 +33,14 @@ body {
 }
 
 .kitty {
-  background-image: url(../img/main.svg);
+  background-image: url(../img/main-1.png);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  border-radius: 10px;
 }
 .kitty .kitty-text {
   display: flex;
@@ -61,20 +64,176 @@ body {
   font-size: 25px;
 }
 .kitty .kitty-text button {
-  margin-top: 20px;
-  background-color: white;
-  background-image: url(../img/paw-1.png);
+  background-image: url(../img/paw-1.svg);
+  background-size: 36px;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 15%;
-  height: 30%;
+  background-position: 190px 7px;
+  margin-top: 20px;
+  width: 18%;
+  height: 50px;
   border: 0;
   border-radius: 25px;
-  padding: 5px;
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
 }
 
 .paw {
   display: flex;
   flex-direction: row;
   justify-content: right;
+}
+
+.adv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -15%;
+  margin-bottom: 50px;
+}
+.adv h2 {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Rubik";
+  padding-bottom: 10px;
+}
+.adv .adv-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.adv .adv-item .adv-items {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  width: 30%;
+  height: 320px;
+  background-color: white;
+}
+.adv .adv-item .adv-items .text-adv {
+  padding: 8%;
+  color: black;
+  width: 80%;
+}
+.adv .adv-item .adv-items .text-adv img {
+  width: 90px;
+  height: 90px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.adv .adv-item .adv-items .text-adv h3 {
+  color: black;
+  font-family: "Rubik";
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 7px;
+  width: 90%;
+}
+.adv .adv-item .adv-items .text-adv p {
+  color: black;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 5px;
+  margin: 0;
+  width: 90%;
+}
+
+.fish {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.numbers-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.numbers-slider h2 {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Rubik";
+  padding-bottom: 10px;
+}
+.numbers-slider .numbers-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.numbers-slider .numbers-item .img-num {
+  margin-right: 32%;
+  position: relative;
+}
+.numbers-slider .numbers-item .num-info {
+  background-color: white;
+  width: 25%;
+  border-radius: 20px;
+  position: absolute;
+  margin: 70px 0 0 30%;
+}
+.numbers-slider .numbers-item .num-info .num-text {
+  padding: 20px 0 20px 50px;
+}
+.numbers-slider .numbers-item .num-info .num-text h3 {
+  font-family: "Rubik";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.07px;
+}
+.numbers-slider .numbers-item .num-info .num-text ul {
+  padding-left: 10px;
+}
+.numbers-slider .numbers-item .num-info .num-text ul li {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+}
+.numbers-slider .numbers-item .num-info .num-text ul li::marker {
+  color: hsl(18, 100%, 61%);
+  font-size: 25px;
+}
+.numbers-slider .numbers-item .num-info .num-text button {
+  background-image: url(../img/paw-2.svg);
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-position: 165px 7px;
+  background-color: hsl(18, 100%, 61%);
+  margin-top: 20px;
+  width: 50%;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: white;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.reviews h2 {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Rubik";
+  padding-bottom: 10px;
+}
+.reviews .reviews-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.reviews .reviews-item .reviews-items {
+  width: 30%;
+  background: hsl(0, 0%, 100%);
+}
+.reviews .reviews-item .reviews-items p {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
