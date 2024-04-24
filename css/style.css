@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #fff2df;
+  background-color: #f1f1f0;
 }
 
 .container {
@@ -229,11 +229,54 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.reviews .reviews-item .reviews-items {
   width: 30%;
   background: hsl(0, 0%, 100%);
 }
+.reviews .reviews-item .reviews-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.reviews .reviews-item .reviews-items img {
+  padding: 0;
+  margin: 0;
+}
 .reviews .reviews-item .reviews-items p {
   color: black;
+}
+.reviews .reviews-item .reviews-items-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.map {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  background: hsl(39, 94%, 68%);
+}
+.map .map-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+.map .map-item .map-text {
+  padding: 20px 0 20px 60px;
+}
+.map .adress {
+  height: 100%;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 0.5px solid rgb(180, 177, 177);
+}
+.footer-info div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
