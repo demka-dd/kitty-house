@@ -67,7 +67,7 @@ body {
   background-image: url(../img/paw-1.svg);
   background-size: 36px;
   background-repeat: no-repeat;
-  background-position: 190px 7px;
+  background-position: 95% 7px;
   margin-top: 20px;
   width: 18%;
   height: 50px;
@@ -76,6 +76,10 @@ body {
   padding: 15px;
   text-align: left;
   font-size: 16px;
+}
+.kitty .kitty-text button a {
+  text-decoration: none;
+  color: black;
 }
 
 .paw {
@@ -199,14 +203,14 @@ body {
   text-align: left;
 }
 .numbers-slider .numbers-item .num-info .num-text ul li::marker {
-  color: hsl(18, 100%, 61%);
+  color: hsl(39, 94%, 68%);
   font-size: 25px;
 }
 .numbers-slider .numbers-item .num-info .num-text button {
   background-image: url(../img/paw-2.svg);
   background-size: 36px;
   background-repeat: no-repeat;
-  background-position: 165px 7px;
+  background-position: 95% 7px;
   background-color: hsl(18, 100%, 61%);
   margin-top: 20px;
   width: 50%;
@@ -218,39 +222,9 @@ body {
   font-size: 16px;
   color: white;
 }
-
-.reviews-item {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.reviews-item.active {
-  opacity: 1;
-}
-
-.ui-slider {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
-}
-
-.ui-slider .ui-slider-handle {
-  cursor: grab;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.ui-slider .ui-slider-handle:active {
-  cursor: grabbing;
+.numbers-slider .numbers-item .num-info .num-text button a {
+  text-decoration: none;
+  color: white;
 }
 
 .reviews {
@@ -271,18 +245,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
-}
-.reviews .str {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-}
-.reviews .str img {
-  width: 80px;
-  height: 80px;
-}
-.reviews .str .img-1 {
-  padding-left: -10px;
 }
 .reviews .reviews-item {
   display: flex;
@@ -311,6 +273,19 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.str {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.str img {
+  width: 80px;
+  height: 80px;
+}
+.str .img-1 {
+  padding-left: -10px;
 }
 
 .contacts {
@@ -361,4 +336,266 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.footer-info div p {
+  color: hsl(0, 0%, 56%);
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header-nav {
+    padding: 10px;
+  }
+  .header-nav nav li a {
+    font-size: 14px;
+  }
+  .kitty .kitty-text {
+    padding: 0px;
+  }
+  .kitty .kitty-text h1 {
+    font-size: 50px;
+  }
+  .kitty .kitty-text .text-1 {
+    font-size: 14px;
+  }
+  .kitty .kitty-text p {
+    font-size: 20px;
+  }
+  .kitty .kitty-text button {
+    background-image: url(../img/paw-1.svg);
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: 95% 5px;
+    margin-top: 20px;
+    width: 25%;
+    height: 45px;
+    border: 0;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+  }
+  .kitty .kitty-text button a {
+    text-decoration: none;
+    color: black;
+    width: 20%;
+  }
+  .paw {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+  .paw img {
+    width: 220px;
+    height: 220px;
+  }
+  .adv h2 {
+    font-size: 25px;
+  }
+  .adv .adv-item {
+    display: flex;
+    justify-content: center;
+  }
+  .adv .adv-item .adv-items {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 320px;
+  }
+  .adv .adv-item .adv-items .text-adv {
+    padding-left: 10%;
+    width: 90%;
+  }
+  .adv .adv-item .adv-items .text-adv img {
+    width: 75px;
+    height: 75px;
+  }
+  .adv .adv-item .adv-items .text-adv h3 {
+    font-family: "Rubik";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    padding-top: 0px;
+  }
+  .adv .adv-item .adv-items .text-adv p {
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  .fish {
+    margin-top: -10%;
+  }
+  .fish img {
+    width: 350px;
+    height: 350px;
+  }
+  .numbers-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -20%;
+  }
+  .numbers-slider .num-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .numbers-slider h2 {
+    font-size: 25px;
+  }
+  .numbers-slider .numbers-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .numbers-slider .numbers-item .img-num {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 25%;
+  }
+  .numbers-slider .numbers-item .img-num img {
+    width: 500px;
+    height: 400px;
+  }
+  .numbers-slider .numbers-item .num-info {
+    background-color: white;
+    width: 35%;
+    border-radius: 20px;
+    position: absolute;
+    margin: 70px 0 0 50%;
+  }
+  .numbers-slider .numbers-item .num-info .num-text {
+    padding: 10px 8px 20px 35px;
+  }
+  .numbers-slider .numbers-item .num-info .num-text h3 {
+    font-family: "Rubik";
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .numbers-slider .numbers-item .num-info .num-text ul li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .numbers-slider .numbers-item .num-info .num-text button {
+    background-position: 95% 5px;
+    margin-top: 10px;
+    width: 70%;
+    height: 45px;
+    font-size: 14px;
+  }
+  .numbers-slider .numbers-item .num-info .num-text button a {
+    text-decoration: none;
+    color: white;
+    width: 20%;
+  }
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .reviews h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .reviews .revw {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .reviews .reviews-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    width: 100%;
+    height: 50%;
+    margin-right: 20px;
+    transition: transform 0.5s ease-in-out;
+  }
+  .reviews .reviews-item .reviews-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 15px;
+  }
+  .reviews .reviews-item .reviews-items p {
+    font-size: 16px;
+  }
+  .str {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+  .str img {
+    width: 70px;
+    height: 70px;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  .contacts .contacts-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contacts .contacts-item .contacts-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background: hsl(39, 94%, 68%);
+  }
+  .contacts .contacts-item .contacts-text div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2%;
+  }
+  .contacts .contacts-item .contacts-text div h2 {
+    font-size: 30px;
+  }
+  .contacts .contacts-item .contacts-text div .cont-1 {
+    font-family: "Rubik";
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .contacts .contacts-item .contacts-text div .cont {
+    margin-top: -10px;
+  }
+  .contacts .contacts-item .contacts-text .map {
+    width: 60%;
+  }
+  .contacts .map {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 0.5px solid rgb(180, 177, 177);
+  }
+  .footer-info div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-info div p {
+    color: hsl(0, 0%, 56%);
+  }
 }/*# sourceMappingURL=style.css.map */

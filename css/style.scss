@@ -62,7 +62,7 @@ body {
             background-image: url(../img/paw-1.svg);
             background-size: 36px;
             background-repeat: no-repeat;
-            background-position: 190px 7px;
+            background-position: 95% 7px;
             margin-top: 20px;
             width: 18%;
             height: 50px;
@@ -71,6 +71,10 @@ body {
             padding: 15px;
             text-align: left;
             font-size: 16px;
+            a {
+                text-decoration: none;
+                color: black;
+            }
         }
         
     }
@@ -192,7 +196,7 @@ body {
                         text-align: left;
                     }
                     li::marker {
-                        color:hsla(18, 100%, 61%, 1);
+                        color: hsla(39, 94%, 68%, 1);
                         font-size: 25px;
                     }
                 }
@@ -200,7 +204,7 @@ body {
                     background-image: url(../img/paw-2.svg);
                     background-size: 36px;
                     background-repeat: no-repeat;
-                    background-position: 165px 7px;
+                    background-position: 95% 7px;
                     background-color: hsla(18, 100%, 61%, 1);
                     margin-top: 20px;
                     width: 50%;
@@ -211,6 +215,10 @@ body {
                     text-align: left;
                     font-size: 16px;
                     color: white;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
                 }
             }
         }
@@ -218,39 +226,7 @@ body {
     }
     
 }
-.reviews-item {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
 
-.reviews-item.active {
-    opacity: 1;
-}
-
-.ui-slider {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-}
-
-.ui-slider .ui-slider-handle {
-    cursor: grab;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-
-.ui-slider .ui-slider-handle:active {
-    cursor: grabbing;
-}
 .reviews {
     display: flex;
     flex-direction: column;
@@ -271,19 +247,7 @@ body {
         gap: 20px;
         
     }
-    .str {
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        img {
-            width: 80px;
-            height: 80px;
-        }
-        
-        .img-1 {
-            padding-left: -10px;
-        }
-    }
+    
     .reviews-item {
         display: flex;
         flex-direction: column;
@@ -314,6 +278,18 @@ body {
             flex-direction: row;
             justify-content: space-around;
         }
+    }
+}
+.str {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    .img-1 {
+        padding-left: -10px;
     }
 }
 
@@ -368,7 +344,295 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    p {
+        color: hsla(0, 0%, 56%, 1);
+    }
    }
+}
+
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .header-nav {
+        padding: 10px;
+        nav {
+            li {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .kitty {
+        .kitty-text {
+
+            padding: 0px;
+            h1 {
+
+                font-size: 50px;
+            }
+            .text-1 {
+
+                font-size: 14px;
+            }
+            p {
+
+                font-size: 20px;
+            }
+            button {
+                background-image: url(../img/paw-1.svg);
+                background-size: 36px;
+                background-repeat: no-repeat;
+                background-position: 95% 5px;
+                margin-top: 20px;
+                width: 25%;
+                height: 45px;
+                border: 0;
+                border-radius: 25px;
+                padding: 15px;
+                text-align: left;
+                font-size: 14px; 
+                a {
+                    text-decoration: none;
+                    color: black;
+                    width: 20%;
+                }
+                
+            }
+            
+        }
+    }
+    .paw {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+         img {
+            width: 220px;
+            height: 220px;
+         }
+    }
+    .adv {
+        h2 {
+            font-size: 25px;
+        }
+        .adv-item {
+            display: flex;
+            justify-content: center;
+            .adv-items {
+                display: flex;
+                justify-content: center;
+                width: 40%;
+                height: 320px;
+                .text-adv {
+                    padding-left: 10%;
+                    width: 90%;
+                    img {
+                        width: 75px;
+                        height: 75px;
+                    }
+                    h3 {
+                        font-family: 'Rubik';
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 28px;
+                        text-align: left;
+                        padding-top: 0px;
+                    }
+                    p{
+                        font-family: 'Lato';
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 21px;
+                    }
+                }
+            }
+            
+        }
+    }
+    .fish {
+        margin-top: -10%;
+        img {
+            width: 350px;
+            height: 350px;
+        }
+    }
+    .numbers-slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -20%;
+        .num-row {
+            display: flex;
+            flex-direction: row;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        .numbers-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .img-num {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                margin-right: 25%;
+                img {
+                    width: 500px;
+                    height: 400px;
+                }
+            }
+            .num-info {
+                background-color: white;
+                width: 35%;
+                border-radius: 20px;
+                position: absolute;
+                margin: 70px 0 0 50%;
+                .num-text {
+                    padding: 10px 8px 20px 35px;
+                    h3 {
+                        font-family: 'Rubik';
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                    ul {
+                        li {
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                    button {
+                        background-position: 95% 5px;
+                        margin-top: 10px;
+                        width: 70%;
+                        height: 45px;
+                        font-size: 14px;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            width: 20%;
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        overflow: hidden;
+        width: 100%;
+        h2 {
+            text-align: center;
+            font-size: 25px;
+        }
+        .revw {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .reviews-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: hsla(0, 0%, 100%, 1);
+            border-radius: 15px;
+            width: 100%;
+            height: 50%;
+            margin-right: 20px;
+            transition: transform 0.5s ease-in-out;
+            .reviews-items {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 10px 15px;
+
+                p {
+                    font-size: 16px;
+
+                }
+            }
+        }
+    }
+    .str {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 70px;
+        .contacts-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 50px;
+            .contacts-text {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                background: hsla(39, 94%, 68%, 1);
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-right: 2%;
+                    h2 {
+                        font-size: 30px;
+                    }
+                    .cont-1 {
+                        font-family: 'Rubik';
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                    .cont{
+                        margin-top: -10px;
+                    }
+                }
+                
+                .map {
+                    width: 60%;
+                }
+            }
+    
+        }
+        .map {
+            display: flex;
+            justify-content: center;
+            width: 60%;
+        }
+    
+    }
+    .footer-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 0.5px solid rgb(180, 177, 177);
+       div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+            color: hsla(0, 0%, 56%, 1);
+
+        }
+       }
+    }
 }
 
 
