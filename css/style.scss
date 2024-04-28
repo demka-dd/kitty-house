@@ -266,7 +266,7 @@ body {
             
             img {
                 margin-top: -90px;
-                
+
             }
             p {
                 padding: 0px 0px 10px 20px;
@@ -316,22 +316,31 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding-right: 5%;
+                padding-left: 10%;
+                h2 {
+                    font-size: 35px;
+                }
+                .cont-1 {
+                    font-family: 'Rubik';
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+                .cont{
+                    margin-top: -10px;
+                }
             }
             p {
                 padding:0;
             }
             .map {
-                width: 60%;
+                display: flex;
+                justify-content: center;
+                width: 59%;
             }
         }
 
     }
-    .map {
-        display: flex;
-        justify-content: center;
-        width: 60%;
-    }
+    
 
 }
 
@@ -590,8 +599,9 @@ body {
                 div {
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
-                    padding-right: 2%;
+                    justify-content: right;
+                    padding-left: 5%;
+                    padding-right: 0%;
                     h2 {
                         font-size: 30px;
                     }
@@ -606,16 +616,16 @@ body {
                 }
                 
                 .map {
-                    width: 60%;
+                    display: flex;
+                    justify-content: center;
+                    justify-content: right;
+                    width: 70%;
+        
                 }
             }
     
         }
-        .map {
-            display: flex;
-            justify-content: center;
-            width: 60%;
-        }
+        
     
     }
     .footer-info {
@@ -633,6 +643,10 @@ body {
         }
        }
     }
+}
+
+@media (max-width:767px) {
+    
 }
 
 

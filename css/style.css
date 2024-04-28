@@ -312,18 +312,26 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 5%;
+  padding-left: 10%;
+}
+.contacts .contacts-item .contacts-text div h2 {
+  font-size: 35px;
+}
+.contacts .contacts-item .contacts-text div .cont-1 {
+  font-family: "Rubik";
+  font-size: 20px;
+  font-weight: 800;
+}
+.contacts .contacts-item .contacts-text div .cont {
+  margin-top: -10px;
 }
 .contacts .contacts-item .contacts-text p {
   padding: 0;
 }
 .contacts .contacts-item .contacts-text .map {
-  width: 60%;
-}
-.contacts .map {
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 59%;
 }
 
 .footer-info {
@@ -562,8 +570,9 @@ body {
   .contacts .contacts-item .contacts-text div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-right: 2%;
+    justify-content: right;
+    padding-left: 5%;
+    padding-right: 0%;
   }
   .contacts .contacts-item .contacts-text div h2 {
     font-size: 30px;
@@ -577,12 +586,10 @@ body {
     margin-top: -10px;
   }
   .contacts .contacts-item .contacts-text .map {
-    width: 60%;
-  }
-  .contacts .map {
     display: flex;
     justify-content: center;
-    width: 60%;
+    justify-content: right;
+    width: 70%;
   }
   .footer-info {
     display: flex;
