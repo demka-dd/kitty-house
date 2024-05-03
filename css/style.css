@@ -15,21 +15,24 @@ body {
   justify-content: space-between;
   padding: 10px 10px;
 }
-.header-nav nav {
+.header-nav .menu-mob {
   display: flex;
   flex-direction: row;
   gap: 20px;
   padding-top: 20px;
 }
-.header-nav nav li {
+.header-nav .menu-mob li {
   list-style-type: none;
 }
-.header-nav nav li a {
+.header-nav .menu-mob li a {
   font-family: "Lato";
   font-weight: 600;
   font-size: 16px;
   color: black;
   text-decoration: none;
+}
+.header-nav #hamburger-menu {
+  display: none;
 }
 
 .kitty {
@@ -171,42 +174,39 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  border-radius: 30px;
+  background-color: white;
+  width: 80%;
 }
 .numbers-slider .numbers-item .img-num {
-  margin-right: 32%;
-  position: relative;
+  border-radius: 30px;
 }
-.numbers-slider .numbers-item .num-info {
+.numbers-slider .numbers-item .num-text {
   background-color: white;
-  width: 25%;
-  border-radius: 20px;
-  position: absolute;
-  margin: 70px 0 0 30%;
+  padding-left: 65px;
+  border-radius: 30px;
 }
-.numbers-slider .numbers-item .num-info .num-text {
-  padding: 20px 0 20px 50px;
-}
-.numbers-slider .numbers-item .num-info .num-text h3 {
+.numbers-slider .numbers-item .num-text h3 {
   font-family: "Rubik";
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 26.07px;
 }
-.numbers-slider .numbers-item .num-info .num-text ul {
+.numbers-slider .numbers-item .num-text ul {
   padding-left: 10px;
 }
-.numbers-slider .numbers-item .num-info .num-text ul li {
+.numbers-slider .numbers-item .num-text ul li {
   font-family: "Lato";
   font-size: 18px;
   font-weight: 400;
   line-height: 19.2px;
   text-align: left;
 }
-.numbers-slider .numbers-item .num-info .num-text ul li::marker {
+.numbers-slider .numbers-item .num-text ul li::marker {
   color: hsl(39, 94%, 68%);
   font-size: 25px;
 }
-.numbers-slider .numbers-item .num-info .num-text button {
+.numbers-slider .numbers-item .num-text button {
   background-image: url(../img/paw-2.svg);
   background-size: 36px;
   background-repeat: no-repeat;
@@ -222,7 +222,7 @@ body {
   font-size: 16px;
   color: white;
 }
-.numbers-slider .numbers-item .num-info .num-text button a {
+.numbers-slider .numbers-item .num-text button a {
   text-decoration: none;
   color: white;
 }
@@ -252,7 +252,8 @@ body {
   justify-content: center;
   background: hsl(0, 0%, 100%);
   border-radius: 15px;
-  width: 100%;
+  width: 600px;
+  height: 230px;
   margin-right: 20px;
   transition: transform 0.5s ease-in-out;
 }
@@ -357,7 +358,7 @@ body {
   .header-nav {
     padding: 10px;
   }
-  .header-nav nav li a {
+  .header-nav .menu-mob li a {
     font-size: 14px;
   }
   .kitty .kitty-text {
@@ -490,7 +491,7 @@ body {
     font-weight: 500;
   }
   .numbers-slider .numbers-item .num-info .num-text button {
-    background-position: 95% 5px;
+    background-position: 97% 5px;
     margin-top: 10px;
     width: 70%;
     height: 45px;
@@ -604,5 +605,171 @@ body {
   }
   .footer-info div p {
     color: hsl(0, 0%, 56%);
+  }
+}
+@media (max-width: 766px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header-nav .menu-mob {
+    display: none;
+  }
+  .kitty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .kitty .kitty-text {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    text-align: center;
+  }
+  .kitty .kitty-text p {
+    font-size: 18px;
+  }
+  .kitty .kitty-text h1 {
+    font-size: 44px;
+  }
+  .kitty .kitty-text .text-1 {
+    font-size: 16px;
+  }
+  .kitty .kitty-text button {
+    width: 45%;
+    height: 50px;
+    font-size: 16px;
+  }
+  .kitty .kitty-text button a {
+    font-size: 14px;
+  }
+  .paw {
+    margin-top: 20px;
+  }
+  .paw img {
+    width: 150px;
+    height: 150px;
+  }
+  .adv {
+    margin-top: -20%;
+  }
+  .adv h2 {
+    font-size: 28px;
+  }
+  .adv .adv-item {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .adv .adv-item .adv-items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .adv .adv-item .adv-items .text-adv {
+    padding-top: 50px;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .adv .adv-item .adv-items .text-adv img {
+    width: 80px;
+    height: 80px;
+  }
+  .adv .adv-item .adv-items .text-adv h3 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .adv .adv-item .adv-items .text-adv p {
+    font-size: 16px;
+  }
+  .fish {
+    margin-top: -20%;
+  }
+  .fish img {
+    width: 250px;
+    height: 250px;
+  }
+  .numbers-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .numbers-slider .num-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .numbers-slider h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: "Rubik";
+    padding-bottom: 10px;
+  }
+  .numbers-slider .numbers-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    border-radius: 20px;
+  }
+  .numbers-slider .numbers-item img {
+    border-radius: 20px;
+  }
+  .numbers-slider .numbers-item .num-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .numbers-slider .numbers-item .num-text h3 {
+    font-family: "Rubik";
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.07px;
+  }
+  .numbers-slider .numbers-item .num-text ul {
+    padding-left: 10px;
+  }
+  .numbers-slider .numbers-item .num-text ul li {
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+  }
+  .numbers-slider .numbers-item .num-text ul li::marker {
+    color: hsl(39, 94%, 68%);
+    font-size: 25px;
+  }
+  .numbers-slider .numbers-item .num-text button {
+    background-image: url(../img/paw-2.svg);
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: 95% 7px;
+    background-color: hsl(18, 100%, 61%);
+    margin-top: 20px;
+    width: 50%;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+  }
+  .numbers-slider .numbers-item .num-text button a {
+    text-decoration: none;
+    color: white;
+  }
+  .reviews .revw {
+    display: flex;
+    justify-content: center;
+  }
+  .reviews .revw .reviews-item {
+    width: 80%;
+    height: 250px;
   }
 }/*# sourceMappingURL=style.css.map */
