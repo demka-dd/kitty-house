@@ -178,12 +178,12 @@ body {
   background-color: white;
   width: 80%;
 }
-.numbers-slider .numbers-item .img-num {
+.numbers-slider .numbers-item img {
   border-radius: 30px;
 }
 .numbers-slider .numbers-item .num-text {
   background-color: white;
-  padding-left: 65px;
+  padding: 40px 10px 0px 65px;
   border-radius: 30px;
 }
 .numbers-slider .numbers-item .num-text h3 {
@@ -213,7 +213,7 @@ body {
   background-position: 95% 7px;
   background-color: hsl(18, 100%, 61%);
   margin-top: 20px;
-  width: 50%;
+  width: 70%;
   height: 50px;
   border: 0;
   border-radius: 25px;
@@ -333,6 +333,47 @@ body {
   display: flex;
   justify-content: center;
   width: 59%;
+}
+.contacts .contacts-item .contacts-text .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 10px;
+  padding-left: 2%;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+.contacts .contacts-item .contacts-text .social img {
+  width: 30px;
+  height: 30px;
+}
+
+.header-nav-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+  gap: 0px;
+}
+.header-nav-1 img {
+  width: 80px;
+  height: 80px;
+}
+.header-nav-1 .menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 10px;
+}
+.header-nav-1 .menu li {
+  list-style-type: none;
+}
+.header-nav-1 .menu li a {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
 }
 
 .footer-info {
@@ -460,47 +501,33 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 90%;
   }
-  .numbers-slider .numbers-item .img-num {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-right: 25%;
+  .numbers-slider .numbers-item img {
+    width: 450px;
   }
-  .numbers-slider .numbers-item .img-num img {
-    width: 500px;
-    height: 400px;
+  .numbers-slider .numbers-item .num-text {
+    padding: 30px 10px 0px 50px;
   }
-  .numbers-slider .numbers-item .num-info {
-    background-color: white;
-    width: 35%;
-    border-radius: 20px;
-    position: absolute;
-    margin: 70px 0 0 50%;
-  }
-  .numbers-slider .numbers-item .num-info .num-text {
-    padding: 10px 8px 20px 35px;
-  }
-  .numbers-slider .numbers-item .num-info .num-text h3 {
+  .numbers-slider .numbers-item .num-text h3 {
     font-family: "Rubik";
     font-size: 22px;
     font-weight: 600;
   }
-  .numbers-slider .numbers-item .num-info .num-text ul li {
+  .numbers-slider .numbers-item .num-text ul li {
     font-size: 16px;
     font-weight: 500;
   }
-  .numbers-slider .numbers-item .num-info .num-text button {
+  .numbers-slider .numbers-item .num-text button {
     background-position: 97% 5px;
     margin-top: 10px;
-    width: 70%;
+    width: 85%;
     height: 45px;
     font-size: 14px;
   }
-  .numbers-slider .numbers-item .num-info .num-text button a {
+  .numbers-slider .numbers-item .num-text button a {
     text-decoration: none;
     color: white;
-    width: 20%;
   }
   .reviews {
     display: flex;
@@ -584,6 +611,8 @@ body {
     font-weight: 700;
   }
   .contacts .contacts-item .contacts-text div .cont {
+    font-weight: 500;
+    font-size: 17px;
     margin-top: -10px;
   }
   .contacts .contacts-item .contacts-text .map {
@@ -591,6 +620,46 @@ body {
     justify-content: center;
     justify-content: right;
     width: 70%;
+  }
+  .contacts .contacts-item .contacts-text .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px;
+    padding-left: 2%;
+    margin-top: -10px;
+    margin-bottom: 5px;
+  }
+  .contacts .contacts-item .contacts-text .social img {
+    width: 30px;
+    height: 30px;
+  }
+  .header-nav-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 0px;
+  }
+  .header-nav-1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .header-nav-1 .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .header-nav-1 .menu li {
+    list-style-type: none;
+  }
+  .header-nav-1 .menu li a {
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
   }
   .footer-info {
     display: flex;
@@ -696,6 +765,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: -20%;
   }
   .numbers-slider .num-row {
     display: flex;
@@ -721,16 +791,17 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px 10px 15px 30px;
     border-radius: 20px;
   }
   .numbers-slider .numbers-item .num-text h3 {
     font-family: "Rubik";
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 26.07px;
   }
   .numbers-slider .numbers-item .num-text ul {
+    margin-top: -5%;
     padding-left: 10px;
   }
   .numbers-slider .numbers-item .num-text ul li {
@@ -751,7 +822,7 @@ body {
     background-position: 95% 7px;
     background-color: hsl(18, 100%, 61%);
     margin-top: 20px;
-    width: 50%;
+    width: 70%;
     height: 50px;
     border: 0;
     border-radius: 25px;
@@ -771,5 +842,49 @@ body {
   .reviews .revw .reviews-item {
     width: 80%;
     height: 250px;
+  }
+  .contacts .contacts-item .contacts-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contacts .contacts-item .contacts-text .social {
+    padding-bottom: 10px;
+  }
+  .contacts .contacts-item .contacts-text .map {
+    width: 100%;
+    padding-left: 0%;
+  }
+  .header-nav-1 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    gap: 70px;
+  }
+  .header-nav-1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .header-nav-1 .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 10px;
+    width: 70%;
+  }
+  .header-nav-1 .menu li {
+    list-style-type: none;
+  }
+  .header-nav-1 .menu li a {
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+  .footer-info .container {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
