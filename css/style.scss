@@ -13,7 +13,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 10px;
-    
+    a {
+        text-decoration: none;
+    }
     .menu-mob {
         display: flex;
         flex-direction: row;
@@ -28,6 +30,12 @@ body {
             color: black;
             text-decoration: none;
            }
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            margin-top: -10px;
+            margin-left: 10px;
         }
     }
     #hamburger-menu {
@@ -418,6 +426,12 @@ body {
                     font-size: 14px;
                 }
             }
+            img {
+                width: 40px;
+                height: 40px;
+                margin-top: -10px;
+                margin-left: 10px;
+            }
         }
 
     }
@@ -729,7 +743,17 @@ body {
     }
     .header-nav {
         .menu-mob {
-            display: none;
+            padding-top: 15px;
+            li {
+                display: none;
+            }
+            
+            img {
+                width: 40px;
+                height: 40px;
+                margin-top: -10px;
+                margin-left: 10px;
+            }
         }
         
     }
