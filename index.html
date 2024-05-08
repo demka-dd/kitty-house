@@ -16,9 +16,33 @@
                     <li><a href="#">НОМЕРА</a></li>
                     <li><a href="#section-2">ОТЗЫВЫ</a></li>
                     <li><a href="#section-3">КАК НАС НАЙТИ</a></li>
-                    <img src="img/user.svg" alt="">
-                </nav> 
-              
+                    <img id="show-login" src="img/user.svg" alt="">
+                </nav>
+                
+                <div class="popup">
+                    <div class="close-btn">&times;</div>
+                    <div class="form">
+                       <h2>Login</h2>
+                       <div class="form-element">
+                          <label for="email">Email</label>
+                          <input type="text" id="email" placeholder="Enter Email">
+                       </div>
+                       <div class="form-element">
+                          <label for="password">Password</label>
+                          <input type="text" id="password" placeholder="Enter Password">
+                       </div>
+                       <div class="form-element">
+                          <input type="checkbox" id="remember-me">
+                          <label for="remember-me">Remember me</label>
+                       </div>
+                       <div class="form-element">
+                          <button>Sign in</button>
+                       </div>
+                       <div class="form-element">
+                          <a href="#">Forgot password</a>
+                       </div>
+                    </div>
+                 </div>
             </div>
         </div>
     </header>
@@ -281,4 +305,16 @@
 <script src="jquery/numbers.js"></script>
 <script src="jquery/slider-reviews.js"></script>
 <script src="jquery/icons.js"></script>
+<script>
+    document.querySelector("#show-login").addEventListener("click",function(){
+       document.querySelector(".popup").classList.add("active");
+    });
+
+    document.querySelector(".popup .close-btn").addEventListener("click",function(){
+       document.querySelector(".popup").classList.remove("active");
+    });
+
+ </script>
+
+
 
