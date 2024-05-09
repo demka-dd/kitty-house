@@ -10,7 +10,7 @@
     <header>
         <div class="container">
             <div class="header-nav">
-                <img src="img/logo.svg" alt="">
+                <a href="index.html"><img src="img/logo.svg" alt=""></a>
                 <nav class="menu-mob">
                     <li><a href="#section-1">ПОЧЕМУ МЫ?</a></li>
                     <li><a href="#">НОМЕРА</a></li>
@@ -18,31 +18,43 @@
                     <li><a href="#section-3">КАК НАС НАЙТИ</a></li>
                     <img id="show-login" src="img/user.svg" alt="">
                 </nav>
-                
-                <div class="popup">
-                    <div class="close-btn">&times;</div>
-                    <div class="form">
-                       <h2>Login</h2>
-                       <div class="form-element">
-                          <label for="email">Email</label>
-                          <input type="text" id="email" placeholder="Enter Email">
-                       </div>
-                       <div class="form-element">
-                          <label for="password">Password</label>
-                          <input type="text" id="password" placeholder="Enter Password">
-                       </div>
-                       <div class="form-element">
-                          <input type="checkbox" id="remember-me">
-                          <label for="remember-me">Remember me</label>
-                       </div>
-                       <div class="form-element">
-                          <button>Sign in</button>
-                       </div>
-                       <div class="form-element">
-                          <a href="#">Forgot password</a>
-                       </div>
+                <div  class="popup">
+                    <input type="checkbox" id="check">
+                    <div class="login form">
+                        <div class="close-btn">
+                            <img src="img/close-btn.svg" alt="">
+                        </div>
+                      <header>ВХОД</header>
+                      <form action="#">
+                        <input type="text" placeholder="Введите ваш логин">
+                        <input type="password" placeholder="Введите ваш пароль">
+                        <a href="#">Забыли пароль?</a>
+                        <input type="button" class="button" value="Login">
+                      </form>
+                      <div class="signup">
+                        <span class="signup">Ещё нет аккаунта?
+                         <label for="check">Зарегистрироваться</label>
+                        </span>
+                      </div>
                     </div>
-                 </div>
+                    <div class="registration form">
+                        <div class="close-btn">
+                            <img src="img/close-btn.svg" alt="">
+                        </div>
+                      <header>РЕГИСТРАЦИЯ</header>
+                      <form action="#">
+                        <input type="text" placeholder="">
+                        <input type="password" placeholder="Создать логин">
+                        <input type="password" placeholder="Введите пароль">
+                        <input type="button" class="button" value="Зарегистрироваться">
+                      </form>
+                      <div class="signup">
+                        <span class="signup">Есть аккаунт?
+                         <label for="check">Войти</label>
+                        </span>
+                      </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -302,19 +314,18 @@
 </html>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="jquery/numbers.js"></script>
+<!-- <script src="jquery/numbers.js"></script> -->
 <script src="jquery/slider-reviews.js"></script>
 <script src="jquery/icons.js"></script>
 <script>
-    document.querySelector("#show-login").addEventListener("click",function(){
-       document.querySelector(".popup").classList.add("active");
-    });
-
-    document.querySelector(".popup .close-btn").addEventListener("click",function(){
-       document.querySelector(".popup").classList.remove("active");
-    });
-
- </script>
+     document.querySelector("#show-login").addEventListener("click",function(){
+                       document.querySelector(".popup").classList.add("active");
+                    });
+                
+                    document.querySelector(".popup .close-btn").addEventListener("click",function(){
+                       document.querySelector(".popup").classList.remove("active");
+                    });
+</script>
 
 
 

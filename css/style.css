@@ -42,80 +42,94 @@ body {
 }
 .header-nav .popup {
   position: absolute;
-  top: -150%;
+  top: 50%;
   left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(1.25);
-  width: 386px;
-  padding: 20px 30px;
+  transform: translate(-50%, -50%);
+  max-width: 430px;
+  width: 100%;
+  visibility: hidden;
   background: #fff;
-  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  background-image: url(../img/paw-log.svg);
+  background-repeat: no-repeat;
+}
+.header-nav .popup .close-btn {
+  display: flex;
+  justify-content: right;
+}
+.header-nav .popup .registration {
+  display: none;
+}
+.header-nav #check:checked ~ .registration {
+  display: block;
+}
+.header-nav #check:checked ~ .login {
+  display: none;
+}
+.header-nav #check {
+  display: none;
+}
+.header-nav .popup .form {
+  padding: 2rem;
+}
+.header-nav .form header {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 .header-nav .popup.active {
+  visibility: visible;
   top: 50%;
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
 }
-.header-nav .popup .close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 15px;
-  height: 15px;
-  background: #000;
-  color: #eee;
-  text-align: center;
-  line-height: 15px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-.header-nav .popup .form h2 {
-  text-align: center;
-  color: #222;
-  margin: 10px 0px 20px;
-  font-size: 25px;
-}
-.header-nav .popup .form .form-element {
-  margin: 15px 0px;
-}
-.header-nav .popup .form .form-element label {
-  font-size: 14px;
-  color: #222;
-}
-.header-nav .popup .form .form-element input[type=text],
-.header-nav .popup .form .form-element input[type=password] {
-  margin-top: 5px;
-  display: block;
-  width: 100%;
-  padding: 10px;
+.header-nav .form input {
+  height: 55px;
+  width: 95%;
+  padding: 0 15px;
+  font-size: 17px;
+  margin-bottom: 1.3rem;
+  border: 1px solid #ddd;
+  border-radius: 20px;
   outline: none;
-  border: 1px solid #aaa;
-  border-radius: 5px;
 }
-.header-nav .popup .form .form-element input[type=checkbox] {
-  margin-right: 5px;
+.header-nav .form input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
-.header-nav .popup .form .form-element button {
-  width: 100%;
-  height: 40px;
-  border: none;
-  outline: none;
+.header-nav .form a {
   font-size: 16px;
-  background: #222;
-  color: #f5f5f5;
-  border-radius: 10px;
+  color: #009579;
+  text-decoration: none;
+}
+.header-nav .form a:hover {
+  text-decoration: underline;
+}
+.header-nav .form input.button {
+  color: #fff;
+  background: #009579;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.header-nav .form input.button:hover {
+  background: #006653;
+}
+.header-nav .signup {
+  font-size: 17px;
+  text-align: center;
+}
+.header-nav .signup label {
+  color: #009579;
   cursor: pointer;
 }
-.header-nav .popup .form .form-element a {
-  display: block;
-  text-align: right;
-  font-size: 15px;
-  color: #1a79ca;
-  text-decoration: none;
-  font-weight: 600;
+.header-nav .signup label:hover {
+  text-decoration: underline;
 }
 
 .kitty {
