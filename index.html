@@ -16,20 +16,22 @@
                     <li><a href="#">НОМЕРА</a></li>
                     <li><a href="#section-2">ОТЗЫВЫ</a></li>
                     <li><a href="#section-3">КАК НАС НАЙТИ</a></li>
-                    <img id="show-login" src="img/user.svg" alt="">
+                    <div id="show-login" class="log">
+                        <img src="img/kitty.png" alt="">
+                    </div>
                 </nav>
                 <div  class="popup">
+                    <div class="close-btn">
+                        <img src="img/close-btn.svg" alt="">
+                    </div>
                     <input type="checkbox" id="check">
                     <div class="login form">
-                        <div class="close-btn">
-                            <img src="img/close-btn.svg" alt="">
-                        </div>
                       <header>ВХОД</header>
                       <form action="#">
                         <input type="text" placeholder="Введите ваш логин">
                         <input type="password" placeholder="Введите ваш пароль">
                         <a href="#">Забыли пароль?</a>
-                        <input type="button" class="button" value="Login">
+                        <input type="button" class="button" value="ВОЙТИ">
                       </form>
                       <div class="signup">
                         <span class="signup">Ещё нет аккаунта?
@@ -38,12 +40,8 @@
                       </div>
                     </div>
                     <div class="registration form">
-                        <div class="close-btn">
-                            <img src="img/close-btn.svg" alt="">
-                        </div>
                       <header>РЕГИСТРАЦИЯ</header>
                       <form action="#">
-                        <input type="text" placeholder="">
                         <input type="password" placeholder="Создать логин">
                         <input type="password" placeholder="Введите пароль">
                         <input type="button" class="button" value="Зарегистрироваться">
@@ -128,170 +126,135 @@
         <div class="numbers-slider container">
             <h2>НОМЕРА</h2>
                 <div class="num-row">
-                    <div class="numbers-item container">
-                            <img src="img/eko.svg" alt="">
-                            <div class="num-text">
-                                <h3>Эконом плюс</h3>
-                                <ul>
-                                    <li>Площадь - 0,90 м<sup>2</sup></li>
-                                    <li>Размеры (ШхГхВ) — 90х100х180 см</li>
-                                    <li>Цена за сутки: 900₽</li>
-                                </ul>
-                                <button><a href="#">Забронировать</a></button>
-                            </div>
-                    </div>
-                    <div class="numbers-item container">
-                            <img src="img/comfort.svg" alt="">
-                            <div class="num-text">
-                                <h3>Комфорт</h3>
-                                <ul>
-                                    <li>Площадь - 1,13 м<sup>2</sup></li>
-                                    <li>Размеры (ШхГхВ) - 100х125х180 см</li>
-                                    <li>Цена за сутки: 1600₽</li>
-                                </ul>
-                                <button>Забронировать</button>
-                            </div>
-                    </div>
-                    <div class="numbers-item container">
-                            <img src="img/suit.svg" alt="">
-                            <div class="num-text">
-                                <h3>Сьют</h3>
-                                <ul>
-                                    <li>Площадь - 1,56 м<sup>2</sup></li>
-                                    <li>Размеры (ШхГхВ) - 125х125х180 см</li>
-                                    <li>Цена за сутки: 2500₽</li>
-                                </ul>
-                                <button>Забронировать</button>
-                            </div>
-                    </div>
-                    <div class="numbers-item container">
-                            <img src="img/ekoplus.svg" alt="">
-                            <div class="num-text">
-                                <h3>Эконом плюс</h3>
-                                <ul>
-                                    <li>Площадь - 0,90 м<sup>2</sup></li>
-                                    <li>Размеры (ШхГхВ) - 90х100х180 см</li>
-                                    <li>Цена за сутки: 2100₽</li>
-                                </ul>
-                                <button>Забронировать</button>
-                            </div>
-                    </div>
-                    <div class="numbers-item container">
-                            <img src="img/luxe.svg" alt="">
-                            <div class="num-text">
-                                <h3>Люкс</h3>
-                                <ul>
-                                    <li>Площадь - 2,56 м<sup>2</sup></li>
-                                    <li>Размеры (ШхГхВ) - 160х160х180 см</li>
-                                    <li>Цена за сутки: 3500₽</li>
-                                </ul>
-                                <button>Забронировать</button>
-                            </div>
-                    </div>
-                    <div class="numbers-item container">
-                            <img src="img/luxeplus.svg" alt="">
-                            <div class="num-text">
-                                <h3>Люкс плюс</h3>
-                                <ul>
-                                    <li>Площадь - 2,88 м<sup>2</sup></li>
-                                    <li>Размеры (ШхГхВ) - 180х160х180 см</li>
-                                    <li>Цена за сутки: 5000₽</li>
-                                </ul>
-                                <button>Забронировать</button>
-                            </div>
-                    </div>
-                </div>     
-        </div>
-        <div class="reviews container">
-            <h2 id="section-2">ОТЗЫВЫ</h2>
-            <div class="revw">
-                <div class="reviews-item">
-                    <div class="reviews-items">
-                        <img src="img/“.svg" alt="">
-                        <p>Первый раз пришлось оставить нашего котика
-                            в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует.
-                            И мы и котик остались очень довольны!</p>
-                    </div>
-                        <div class="reviews-items-2">
-                            <p>Валерия Гришаева</p>
-                            <p>15 ноября, 2023</p>
+                    <div class="slider">
+                        <button class="prev-button"><img src="img/srt-1.svg" alt=""></button>
+                        <div class="numbers-item container">
+                                <img src="img/eko.svg" alt="">
+                                <div class="num-text">
+                                    <h3>Эконом плюс</h3>
+                                    <ul>
+                                        <li>Площадь - 0,90 м<sup>2</sup></li>
+                                        <li>Размеры (ШхГхВ) — 90х100х180 см</li>
+                                        <li>Цена за сутки: 900₽</li>
+                                    </ul>
+                                </div>
                         </div>
-                    
+                        <div class="numbers-item container">
+                                <img src="img/comfort.svg" alt="">
+                                <div class="num-text">
+                                    <h3>Комфорт</h3>
+                                    <ul>
+                                        <li>Площадь - 1,13 м<sup>2</sup></li>
+                                        <li>Размеры (ШхГхВ) - 100х125х180 см</li>
+                                        <li>Цена за сутки: 1600₽</li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="numbers-item container">
+                                <img src="img/suit.svg" alt="">
+                                <div class="num-text">
+                                    <h3>Сьют</h3>
+                                    <ul>
+                                        <li>Площадь - 1,56 м<sup>2</sup></li>
+                                        <li>Размеры (ШхГхВ) - 125х125х180 см</li>
+                                        <li>Цена за сутки: 2500₽</li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="numbers-item container">
+                                <img src="img/ekoplus.svg" alt="">
+                                <div class="num-text">
+                                    <h3>Эконом плюс</h3>
+                                    <ul>
+                                        <li>Площадь - 0,90 м<sup>2</sup></li>
+                                        <li>Размеры (ШхГхВ) - 90х100х180 см</li>
+                                        <li>Цена за сутки: 2100₽</li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="numbers-item container">
+                                <img src="img/luxe.svg" alt="">
+                                <div class="num-text">
+                                    <h3>Люкс</h3>
+                                    <ul>
+                                        <li>Площадь - 2,56 м<sup>2</sup></li>
+                                        <li>Размеры (ШхГхВ) - 160х160х180 см</li>
+                                        <li>Цена за сутки: 3500₽</li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="numbers-item container">
+                                <img src="img/luxeplus.svg" alt="">
+                                <div class="num-text">
+                                    <h3>Люкс плюс</h3>
+                                    <ul>
+                                        <li>Площадь - 2,88 м<sup>2</sup></li>
+                                        <li>Размеры (ШхГхВ) - 180х160х180 см</li>
+                                        <li>Цена за сутки: 5000₽</li>
+                                    </ul>
+                                </div>
+                        </div>
+                        
+                        <button class="next-button"><img src="img/str-2.svg" alt=""></button>
+                    </div>  
+                    <div class="dots">
+                        <span class="dot" data-slide="0"></span>
+                    </div>               
                 </div>
-                <!-- <div class="reviews-item">
-                    <div class="reviews-items">
-                        <img src="img/“.svg" alt="">
-                        <p>Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
-                    </div>
-                        <div class="reviews-items-2">
-                            <p>Екатерина Минаева</p>
-                            <p>13 октября, 2023</p>
-                        </div>
-                </div> -->
-                <!-- <div class="reviews-item">
-                    <div class="reviews-items">
-                        <img src="img/“.svg" alt="">
-                        <p>Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно. </p>
-                    </div>
-                        <div class="reviews-items-2">
-                            <p>Павел Нечаев</p>
-                            <p>6 aпреля, 2024</p>
-                        </div>
-                </div>
-                <div class="reviews-item">
-                    <div class="reviews-items">
-                        <img src="img/“.svg" alt="">
-                        <p>В этой гостинице меня очень очень выручили. Две недели назад у меня появилась необходимость срочно уехать из города, и я была в панике, не зная, с кем оставить свою Кристи. </p>
-                    </div>
-                        <div class="reviews-items-2">
-                            <p>Анастасия Попова</p>
-                            <p>14 марта, 2024</p>
-                        </div>
-                </div>
-                <div class="reviews-item">
-                    <div class="reviews-items">
-                        <img src="img/“.svg" alt="">
-                        <p>Оставляла своего малыша Тишку, пока ездили всей семьей в отпуск. Котоняни в гостинице - настоящие умницы: каждый день присылали фото и видео с моим мальчиком, играли с ним, чуть ли не с рук кормили.</p>
-                    </div>
-                        <div class="reviews-items-2">
-                            <p>Влад Киреев</p>
-                            <p>12 мая, 2024</p>
-                        </div>
-                </div> -->
-            </div>
         </div>
-        <div class="str container">
-            <img class="slider-prev" src="img/srt-1.svg" alt="">
-            <img class="slider-next" class="img-1" src="img/srt-1.svg" alt="">
-        </div>
-    <section>
-        <div class="contacts">
-            <div class="contacts-item">
-                <div  class="contacts-text">
-                    <div>
-                        <h2 id="section-3">Как нас найти</h2>
-                        <p class="cont-1">Адрес</p>
-                        <p class="cont">Санкт-Петербург,<br>
-                            ул Большая Конюшенная, д 19</p>
-                        <p class="cont-1">Режим работы</p>
-                        <p class="cont">Ежедневно, с 9:00 до 20:00</p>
-                        <p class="cont-1">Телефон</p>
-                        <p class="cont">8 (800) 333-55-99</p>
-                        <p class="cont-1">E-mail</p>
-                        <p class="cont">info@cat-hotel.ru</p>
-                        <p class="cont-1">Социальные сети</p>
-                        <div class="social">
-                            <img src="img/Group 46 (1).svg" alt="">
-                            <img src="img/vk.svg" alt="">
-                            <img src="img/Group 47.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="map"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.ru/maps/2/saint-petersburg/?indoorLevel=1&ll=30.323419%2C59.938477&mode=routes&rtext=~59.938419%2C30.323540&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgc4MDE3NzExElvQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQkdC-0LvRjNGI0LDRjyDQmtC-0L3RjtGI0LXQvdC90LDRjyDRg9C70LjRhtCwIgoNnpbyQRXxwG9C&utm_medium=mapframe&utm_source=maps&z=16.78" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=30.323419%2C59.938477&mode=routes&rtext=~59.938419%2C30.323540&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgc4MDE3NzExElvQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQkdC-0LvRjNGI0LDRjyDQmtC-0L3RjtGI0LXQvdC90LDRjyDRg9C70LjRhtCwIgoNnpbyQRXxwG9C&z=16.78" width="100%" height="534px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <div class="team container">
+            <h2>НАША КОМАНДА - КОТОЛЮБИТЕЛИ И ПРОФЕССИОНАЛЫ</h2>
+            <div class="team-items">
+                <div class="team-item">
+                    <img src="img/1.png" alt="">
+                    <h3>Георгий</h3>
+                    <p>Владелец</p>
+                </div>
+                <div class="team-item">
+                    <img src="img/2.png" alt="">
+                    <h3>Ольга</h3>
+                    <p>Руководитель</p>
+                </div>
+                <div class="team-item">
+                    <img src="img/3.jpeg" alt="">
+                    <h3>Александра</h3>
+                    <p>Менеджер</p>
                 </div>
             </div>
+            <div class="team-text">
+                <p>Наш отель - это семейный бизнес, родившийся из идеи создать лучший отель для кошек, в котором мы бы хотели оставить своих питомцев. В концепции нашего отеля мы собрали все самое лучшее и важное для наших хвостатых! <br>
+                    Мы спроектировали нашу гостиницу с чистого листа, учитывая привычки и характер будущих постояльцев. Построили ее, используя экологичные материалы.
+                </p>
+            </div>
         </div>
-        </div>
-    </section>
+        <section>
+            <div class="contacts">
+                <div class="contacts-item">
+                    <div  class="contacts-text">
+                        <div>
+                            <h2 id="section-3">Как нас найти</h2>
+                            <p class="cont-1">Адрес</p>
+                            <p class="cont">Санкт-Петербург,<br>
+                                ул Большая Конюшенная, д 19</p>
+                            <p class="cont-1">Режим работы</p>
+                            <p class="cont">Ежедневно, с 9:00 до 20:00</p>
+                            <p class="cont-1">Телефон</p>
+                            <p class="cont">8 (800) 333-55-99</p>
+                            <p class="cont-1">E-mail</p>
+                            <p class="cont">info@cat-hotel.ru</p>
+                            <p class="cont-1">Социальные сети</p>
+                            <div class="social">
+                                <img src="img/Group 46 (1).svg" alt="">
+                                <img src="img/vk.svg" alt="">
+                                <img src="img/Group 47.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="map"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.ru/maps/2/saint-petersburg/?indoorLevel=1&ll=30.323419%2C59.938477&mode=routes&rtext=~59.938419%2C30.323540&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgc4MDE3NzExElvQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQkdC-0LvRjNGI0LDRjyDQmtC-0L3RjtGI0LXQvdC90LDRjyDRg9C70LjRhtCwIgoNnpbyQRXxwG9C&utm_medium=mapframe&utm_source=maps&z=16.78" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=30.323419%2C59.938477&mode=routes&rtext=~59.938419%2C30.323540&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgc4MDE3NzExElvQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQkdC-0LvRjNGI0LDRjyDQmtC-0L3RjtGI0LXQvdC90LDRjyDRg9C70LjRhtCwIgoNnpbyQRXxwG9C&z=16.78" width="100%" height="534px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
         <div class="container">
             <div class="header-nav-1">
                 <img src="img/logo.svg" alt="">
@@ -309,23 +272,16 @@
                 <p>Политика конфиденциальности</p>
             </div>
         </div>
-        </main>
+    </main>
 </body>
 </html>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- <script src="jquery/numbers.js"></script> -->
+<script src="jquery/numbers.js"></script>
 <script src="jquery/slider-reviews.js"></script>
 <script src="jquery/icons.js"></script>
-<script>
-     document.querySelector("#show-login").addEventListener("click",function(){
-                       document.querySelector(".popup").classList.add("active");
-                    });
-                
-                    document.querySelector(".popup .close-btn").addEventListener("click",function(){
-                       document.querySelector(".popup").classList.remove("active");
-                    });
-</script>
+<script src="jquery/login.js"></script>
+
 
 
 
