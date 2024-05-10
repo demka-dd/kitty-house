@@ -208,6 +208,84 @@ body {
   justify-content: right;
 }
 
+.order-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 430px;
+  width: 100%;
+  visibility: hidden;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  background-image: url(../img/paw-log.svg);
+  background-repeat: no-repeat;
+}
+.order-popup .close-btn-1 {
+  display: flex;
+  justify-content: right;
+  padding: 15px;
+}
+.order-popup .order-popup.active-pop {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+  border-radius: 15px;
+}
+.order-popup .order-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+.order-popup .order-form h2 {
+  font-size: 25px;
+  text-align: center;
+}
+.order-popup .order-form input {
+  height: 55px;
+  width: 95%;
+  padding: 0 15px;
+  font-size: 17px;
+  margin-bottom: 1.3rem;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+.order-popup .order-form .data {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.order-popup .order-form .data p {
+  font-size: 18px;
+}
+.order-popup .order-form .data input {
+  height: 50px;
+  width: 25%;
+}
+.order-popup .order-form button {
+  background-image: url(../img/paw-2.svg);
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-position: 97% 7px;
+  background-color: hsl(18, 100%, 61%);
+  margin-top: 20px;
+  width: 90%;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.order-popup .order-form button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
 .adv {
   display: flex;
   flex-direction: column;
@@ -663,11 +741,16 @@ body {
     flex-direction: row;
     justify-content: center;
     width: 90%;
+    height: 303px;
   }
   .numbers-slider .num-row .numbers-item img {
     width: 450px;
+    height: 303px;
   }
   .numbers-slider .num-row .numbers-item .num-text {
+    background: url(../img/paw.svg);
+    background-repeat: no-repeat;
+    background-size: 600px 90px;
     padding: 30px 15px 0px 30px;
   }
   .numbers-slider .num-row .numbers-item .num-text h3 {
@@ -876,7 +959,7 @@ body {
     font-size: 16px;
   }
   .kitty .kitty-text button a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .paw {
     margin-top: 20px;
@@ -914,10 +997,10 @@ body {
   }
   .adv .adv-item .adv-items .text-adv h3 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
   }
   .adv .adv-item .adv-items .text-adv p {
-    font-size: 16px;
+    font-size: 17px;
   }
   .fish {
     margin-top: -20%;
@@ -931,10 +1014,26 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-top: -20%;
+    width: 80%;
   }
   .numbers-slider .num-row {
     display: flex;
     flex-direction: column;
+    width: 75%;
+  }
+  .numbers-slider .num-row .slider {
+    width: 90%;
+  }
+  .numbers-slider .num-row .slider .prev-button .next-button {
+    padding: 0;
+    margin-left: -10%;
+  }
+  .numbers-slider .num-row .slider .prev-button .next-button img {
+    width: 70px;
+    height: 70px;
+  }
+  .numbers-slider .num-row .dots {
+    margin-left: 35%;
   }
   .numbers-slider h2 {
     text-align: center;
@@ -948,16 +1047,20 @@ body {
     justify-content: center;
     background: white;
     border-radius: 20px;
+    width: 100%;
   }
   .numbers-slider .numbers-item img {
-    border-radius: 20px;
+    border-radius: 25px;
   }
   .numbers-slider .numbers-item .num-text {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background: url(../img/paw.svg);
+    background-repeat: no-repeat;
+    background-size: 600px 90px;
     padding: 10px 10px 15px 30px;
-    border-radius: 20px;
+    border-radius: 25px;
   }
   .numbers-slider .numbers-item .num-text h3 {
     font-family: "Rubik";
@@ -999,6 +1102,49 @@ body {
   .numbers-slider .numbers-item .num-text button a {
     text-decoration: none;
     color: white;
+  }
+  .team h2 {
+    font-size: 30px;
+  }
+  .team .team-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 20px;
+  }
+  .team .team-items .team-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .team .team-items .team-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .team .team-items .team-item p {
+    font-size: 18px;
+    color: #4b4949;
+    text-align: center;
+    margin-top: -13px;
+  }
+  .team .team-items .team-item img {
+    width: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  .team .team-text {
+    display: flex;
+    justify-content: center;
+  }
+  .team .team-text p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    width: 80%;
   }
   .contacts .contacts-item .contacts-text {
     display: flex;
