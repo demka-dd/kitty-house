@@ -122,7 +122,8 @@ body {
   height: 40px;
   margin: 6px 2px 0px 11px;
 }
-.header-nav .popup {
+
+.popup {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -136,33 +137,40 @@ body {
   background-image: url(../img/paw-log.svg);
   background-repeat: no-repeat;
 }
-.header-nav .popup .close-btn {
+.popup .close-btn {
   display: flex;
   justify-content: right;
   padding: 15px;
 }
-.header-nav .popup .registration {
+
+.popup .registration {
   display: none;
 }
-.header-nav #check:checked ~ .registration {
+
+#check:checked ~ .registration {
   display: block;
 }
-.header-nav #check:checked ~ .login {
+
+#check:checked ~ .login {
   display: none;
 }
-.header-nav #check {
+
+#check {
   display: none;
 }
-.header-nav .popup .form {
+
+.popup .form {
   padding: 2rem;
 }
-.header-nav .form header {
+
+.form header {
   font-size: 25px;
   font-weight: 500;
   text-align: center;
   margin-bottom: 1.5rem;
 }
-.header-nav .popup.active {
+
+.popup.active {
   visibility: visible;
   top: 50%;
   opacity: 1;
@@ -170,7 +178,8 @@ body {
   transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
   border-radius: 15px;
 }
-.header-nav .form input {
+
+.form input {
   height: 55px;
   width: 95%;
   padding: 0 15px;
@@ -180,20 +189,24 @@ body {
   border-radius: 20px;
   outline: none;
 }
-.header-nav .form input:focus {
+
+.form input:focus {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
-.header-nav .form a {
+
+.form a {
   font-size: 17px;
   font-weight: 500;
   color: #2e2b2b;
   text-decoration: none;
   padding-right: 10px;
 }
-.header-nav .form a:hover {
+
+.form a:hover {
   text-decoration: underline;
 }
-.header-nav .form input.button {
+
+.form input.button {
   color: #ffffff;
   background-image: url(../img/paw-2.svg);
   background-size: 45px;
@@ -210,15 +223,18 @@ body {
   border-radius: 30px;
   margin-left: 30px;
 }
-.header-nav .signup {
+
+.signup {
   font-size: 19px;
   text-align: center;
 }
-.header-nav .signup label {
+
+.signup label {
   color: rgba(218, 151, 97, 0.8823529412);
   cursor: pointer;
 }
-.header-nav .signup label:hover {
+
+.signup label:hover {
   text-decoration: underline;
 }
 
