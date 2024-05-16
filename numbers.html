@@ -59,10 +59,53 @@
         </div>
     </header>
     <main>
-        <div class="main conainer">
             <h1>НАШИ НОМЕРА</h1>
-            <div class="numb container">
+            <div class="numb">
                 <div class="checkbox">
+                    <div class="area">
+                        <h2>Цена за сутки</h2>
+                        <div class="count">
+                            <input type="text" placeholder="до">
+                            <button><a href="">Применить</a></button>
+                        </div>
+                        <div class="input-ch"> 
+                            <input type="checkbox"><p>0,63 м<sup>2</sup></p>
+                        </div>
+                        <div class="input-ch">
+                            <input type="checkbox"><p>0,90 м<sup>2</sup></p>
+                        </div>    
+                        <div class="input-ch">
+                            <input type="checkbox"><p>1,13 м<sup>2</sup></p>
+                        </div>
+                        <div class="input-ch">
+                            <input type="checkbox"><p>1,56 м<sup>2</sup></p>
+                        </div>
+                        <div class="input-ch">
+                            <input type="checkbox"><p>2,56 м<sup>2</sup></p>
+                        </div>
+                        <div class="input-ch">
+                            <input type="checkbox"><p>2,88 м<sup>2</sup></p>
+                        </div>
+                    </div>    
+                        <div class="type">
+                            <h2>Оснащение номера</h2>
+                            <div class="input-num">
+                                <input type="checkbox"><p>Пустой номер</p>
+                            </div>
+                            <div class="input-num">
+                                <input type="checkbox"><p>Лежак</p>
+                            </div>
+                            <div class="input-num">
+                                <input type="checkbox"><p>Когтеточка</p>
+                            </div>
+                            <div class="input-num">
+                                <input type="checkbox"><p>Игровой комплекс</p>
+                            </div>
+                            <div class="input-num">
+                                <input type="checkbox"><p>Домик</p>
+                            </div>
+                        </div>
+                    <button class="cbros"><a href="">Сбросить фильтры</a></button>
                 </div>
                 <div class="cards">
                     <div class="numbers-item container">
@@ -72,8 +115,10 @@
                             <ul>
                                 <li>Площадь - 0,63 м<sup>2</sup></li>
                                 <li>Размеры (ШхГхВ) — 90х70х180 см</li>
+                                <li>Оснащение номера: <img src="img/pusto.svg" alt=""></li>
                                 <li>Цена за сутки: 900₽</li>
                             </ul>
+                            <button><a class="modal-link" href="#">Забронировать</a></button>
                         </div>
                     </div>
                     <div class="numbers-item container">
@@ -83,8 +128,10 @@
                             <ul>
                                 <li>Площадь - 1,13 м<sup>2</sup></li>
                                 <li>Размеры (ШхГхВ) - 100х125х180 см</li>
+                                <li>Оснащение номера: <img src="img/lejac.svg" alt=""> <img src="img/kogtetoch.svg" alt=""> <img src="img/games.svg" alt=""></li>
                                 <li>Цена за сутки: 1600₽</li>
                             </ul>
+                            <button><a class="modal-link" href="#">Забронировать</a></button>
                         </div>
                     </div>
                     <div class="numbers-item container">
@@ -94,8 +141,10 @@
                             <ul>
                                 <li>Площадь - 1,56 м<sup>2</sup></li>
                                 <li>Размеры (ШхГхВ) - 125х125х180 см</li>
+                                <li>Оснащение номера: <img src="img/lejac.svg" alt=""> <img src="img/kogtetoch.svg" alt=""> <img src="img/games.svg" alt=""></li>
                                 <li>Цена за сутки: 2500₽</li>
                             </ul>
+                            <button><a class="modal-link" href="#">Забронировать</a></button>
                         </div>
                     </div>
                     <div class="numbers-item container">
@@ -105,8 +154,10 @@
                             <ul>
                                 <li>Площадь - 0,90 м<sup>2</sup></li>
                                 <li>Размеры (ШхГхВ) - 90х100х180 см</li>
+                                <li>Оснащение номера: <img src="img/lejac.svg" alt=""> <img src="img/kogtetoch.svg" alt=""></li>
                                 <li>Цена за сутки: 2100₽</li>
                             </ul>
+                            <button><a class="modal-link" href="#">Забронировать</a></button>
                         </div>
                     </div>
                     <div class="numbers-item container">
@@ -116,8 +167,10 @@
                             <ul>
                                 <li>Площадь - 2,56 м<sup>2</sup></li>
                                 <li>Размеры (ШхГхВ) - 160х160х180 см</li>
+                                <li>Оснащение номера: <img src="img/lejac.svg" alt=""> <img src="img/kogtetoch.svg" alt=""> <img src="img/games.svg" alt=""> <img src="img/house.svg" alt=""></li>
                                 <li>Цена за сутки: 3500₽</li>
                             </ul>
+                            <button><a class="modal-link" href="#">Забронировать</a></button>
                         </div>
                     </div>
                     <div class="numbers-item container">
@@ -127,13 +180,68 @@
                             <ul>
                                 <li>Площадь - 2,88 м<sup>2</sup></li>
                                 <li>Размеры (ШхГхВ) - 180х160х180 см</li>
+                                <li>Оснащение номера: <img src="img/lejac.svg" alt=""> <img src="img/kogtetoch.svg" alt=""> <img src="img/games.svg" alt=""> <img src="img/house.svg" alt=""></li>
                                 <li>Цена за сутки: 5000₽</li>
                             </ul>
+                            <button><a class="modal-link" href="#">Забронировать</a></button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>    
+
+        <input type="text" id="priceFilter" placeholder="Введите сумму">
+<button onclick="filterCards()">Фильтровать</button>
+
+<div id="cardsContainer">
+  <div class="card" data-price="100">Карточка 1 - 100</div>
+  <div class="card" data-price="200">Карточка 2 - 200</div>
+  <div class="card" data-price="300">Карточка 3 - 300</div>
+  <div class="card" data-price="400">Карточка 4 - 400</div>
+  <div class="card" data-price="500">Карточка 5 - 500</div>
+</div>
+<script>
+    function filterCards() {
+  var filterPrice = parseInt(document.getElementById('priceFilter').value);
+  var cards = document.querySelectorAll('.card');
+
+  cards.forEach(function(card) {
+    var cardPrice = parseInt(card.getAttribute('data-price'));
+    if (cardPrice <= filterPrice) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>  
+
+    <input type="text" id="priceFilter" placeholder="Введите диапазон цены">
+    <button id="resetFilters">Сбросить фильтры</button>
+
+    <div class="product" data-price="100">Товар 1 - 100</div>
+    <div class="product" data-price="200">Товар 2 - 200</div>
+    <div class="product" data-price="300">Товар 3 - 300</div>
+    <div class="product" data-price="400">Товар 4 - 400</div>
+    <div class="product" data-price="500">Товар 5 - 500</div>
+
+    <script>
+        $(document).ready(function() {
+            $('#priceFilter').on('input', function() {
+                let filterValue = $(this).val();
+                if (filterValue) {
+                    $('.product').hide();
+                    $('.product[data-price*="' + filterValue + '"]').show();
+                } else {
+                    $('.product').show();
+                }
+            });
+
+            $('#resetFilters').click(function() {
+                $('#priceFilter').val('');
+                $('.product').show();
+            });
+        });
+    </script>  
     </main>
     <footer>
         <div class="container">

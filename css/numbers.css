@@ -185,21 +185,139 @@ body {
 .cards .numbers-item img {
   border-radius: 20px;
 }
+.cards .numbers-item .num-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+.cards .numbers-item .num-text h3 {
+  padding-left: 10%;
+  font-size: 21px;
+  font-weight: 600;
+}
+.cards .numbers-item .num-text ul {
+  padding-left: 40px;
+  margin-top: -10px;
+  list-style-type: none;
+}
+.cards .numbers-item .num-text ul li {
+  font-family: "Lato";
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+}
+.cards .numbers-item .num-text button {
+  background-image: url(../img/paw-2.svg);
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-position: 97% 5px;
+  background-color: hsl(18, 100%, 61%);
+  margin-top: 10px;
+  margin-left: 10%;
+  width: 70%;
+  height: 45px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.cards .numbers-item .num-text button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 
 .numb {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: 80px;
   gap: 50px;
 }
-.numb h1 {
-  text-align: center;
+
+h1 {
+  margin-left: 4%;
 }
 
 .checkbox {
-  background-color: #4b4949;
+  display: flex;
+  flex-direction: column;
   width: 20%;
+}
+.checkbox .area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checkbox .area .count {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.checkbox .area .count input {
+  width: 30%;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid rgb(83, 80, 80);
+}
+.checkbox .area .count button {
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  height: 30px;
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.checkbox .area .count button a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.checkbox .area .input-ch {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.checkbox .area .input-ch p {
+  margin: 0;
+  font-size: 18px;
+}
+.checkbox .area .input-ch input {
+  width: 20px;
+  height: 20px;
+}
+.checkbox .type .input-num {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.checkbox .type .input-num p {
+  margin: 0;
+  font-size: 18px;
+}
+.checkbox .type .input-num input {
+  width: 20px;
+  height: 20px;
+}
+.checkbox .cbros {
+  width: 60%;
+  margin-left: 10%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  height: 30px;
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.checkbox .cbros a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 .header-nav-1 {
