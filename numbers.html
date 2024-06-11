@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>НОМЕРА</title>
     <link rel="stylesheet" href="css/numbers.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,13 +19,14 @@
                     <li><a href="numbers.html">НОМЕРА</a></li>
                     <li><a href="index.html">КОМАНДА</a></li>
                     <li><a href="index.html">КАК НАС НАЙТИ</a></li>
-                    <div id="show-login" class="log">
-                        <img src="img/kitty.png" alt="">
+                    <div class="log">
+                        <button><a href="login.html">Войти</a></button>
                     </div>
                 </nav>
                 <div  class="popup">
                     <div class="close-btn">
                         <img src="img/close-btn.svg" alt="">
+                        
                     </div>
                     <input type="checkbox" id="check">
                     <div class="login form">
@@ -73,8 +77,42 @@
             </div>
         </div>
     </header>
+
     <main>
+        <div class="dropdown filtr">
             <h1>НАШИ НОМЕРА</h1>
+            <button onclick="myFunction()" class="dropbtn fil">Фильтры</button>
+            <div id="myDropdown" class="dropdown-content ">
+                <a href="#" class="close-1"><img src="img/close-btn.svg" alt=""></a>
+                <div class="area">
+                    <h2>Цена за сутки</h2>
+                    <div class="count">
+                        <input id="priceFilter" type="text" placeholder="до">
+                        <button onclick="filterCards()"><a href="">Применить</a></button>
+                    </div>
+                    <div class="input-ch"> 
+                    <input type="checkbox" data-area="0.63"><p>0,63 м<sup>2</sup></p>
+                    </div>
+                    <div class="input-ch">
+                        <input type="checkbox" data-area="0.90"><p>0,90 м<sup>2</sup></p>
+                    </div>    
+                    <div class="input-ch">
+                        <input type="checkbox" data-area="1.13"><p>1,13 м<sup>2</sup></p>
+                    </div>
+                    <div class="input-ch">
+                        <input type="checkbox" data-area="1.56"><p>1,56 м<sup>2</sup></p>
+                    </div>
+                    <div class="input-ch">
+                        <input type="checkbox" data-area="2.56"><p>2,56 м<sup>2</sup></p>
+                    </div>
+                    <div class="input-ch">
+                        <input type="checkbox" data-area="2.88"><p>2,88 м<sup>2</sup></p>
+                    </div>
+                </div>    
+               
+            </div>
+    
+        </div>
             <div class="numb">
                 <div class="checkbox">
                     <div class="area">
@@ -233,17 +271,4 @@
 <script src="jquery/order-popup.js"></script>
 <script src="jquery/count.js"></script>
 <script src="jquery/square.js"></script>
-<script>
-    $(document).ready(function() {
-    $('.cbros').click(function(e) {
-        e.preventDefault(); // Предотвращаем стандартное поведение ссылки
-
-        // Здесь должен быть Ваш код для сброса фильтров
-        // Например, если у Вас есть классы, которые применяют фильтры, Вы можете удалить их
-        $('cards').removeClass('filterApplied'); // Пример класса фильтра
-
-        // Возвращаем все карточки, если они были скрыты каким-либо образом
-        // Например, если карточки скрыты при помощи класса, удаляем этот класс
-    });
-});
-</script>
+<script src="jquery/filters.js"></script>

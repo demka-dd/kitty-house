@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #f1f1f0;
+   
     cursor: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/cursor.png), auto;
 }
 
@@ -78,75 +79,6 @@ body {
         }
     }
 }
-// .modal {
-    
-//     h2 {
-//         font-size: 25px;
-//         text-align: center;
-//     }
-//     input {
-//         height: 55px;
-//         width: 95%;
-//         padding: 0 15px;
-//         font-size: 17px;
-//         margin-bottom: 1.3rem;
-//         border: 1px solid #ddd;
-//         border-radius: 20px;
-//         outline: none;
-//     }
-//     .order-form {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         padding: 2rem;
-//         h2 {
-//             font-size: 25px;
-//             text-align: center;
-//         }
-//         input {
-//             height: 55px;
-//             width: 95%;
-//             padding: 0 15px;
-//             font-size: 17px;
-//             margin-bottom: 1.3rem;
-//             border: 1px solid #ddd;
-//             border-radius: 20px;
-//             outline: none;
-//         }
-//         .data {
-//             display: flex;
-//             flex-direction: row;
-//             gap: 15px;
-//             p {
-//                 font-size: 18px;
-//             }
-//             input {
-//                 height: 50px;
-//                 width: 25%;
-//             }
-//         }
-//         button {
-//             background-image: url(../img/paw-2.svg);
-//             background-size: 36px;
-//             background-repeat: no-repeat;
-//             background-position: 97% 7px;
-//             background-color: hsla(18, 100%, 61%, 1);
-//             margin-top: 20px;
-//             width: 90%;
-//             height: 50px;
-//             border: 0;
-//             border-radius: 25px;
-//             text-align: center;
-//             font-size: 18px;
-//             box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-//             a {
-//                 text-decoration: none;
-//                 color: rgb(255, 255, 255);
-//             }
-//         }
-//     }
-    
-// }
 
 .container {
     width: 1200px;
@@ -168,7 +100,7 @@ body {
         li {
             list-style-type: none;
            a {
-            font-family: 'Lato';
+           
             font-weight: 600;
             font-size: 16px;
             color: black;
@@ -176,21 +108,23 @@ body {
            }
         }
         .log {
-            width: 55px; 
-            height: 55px;
-            background: #f8f6f6;
-            border-radius: 50%;
-            position: relative;
-            margin-top: -3%;
-            margin-left: 40px;
-            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-            img {
-                position: absolute;
-                width: 35px;
-                height: 40px;
-                margin: 6px 2px 0px 11px;
-                
+            margin-left: 70px;
+            margin-top: -5px;
+            button {
+                font-size: 17px;
+                border: none;
+                background-color:hsl(18, 95%, 61%);
+                box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+                border-radius: 15px;
+                color: rgb(255, 255, 255);
+                width: 90px;
+                height: 35px;
             }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
         }
         
     }      
@@ -215,9 +149,7 @@ body {
         padding: 15px;
     }
   }
-  .popup .registration{
-    display: none;
-  }
+
   #check:checked ~ .registration{
     display: block;
   }
@@ -315,17 +247,17 @@ body {
         justify-content: center;
         padding: 100px;
         h1 {
-            font-family: 'Lato';
+            
             margin: 10px 0;
             font-size: 62px;
         }
         .text-1 {
-            font-family: 'Lato';
+           
             margin: 0;
             font-size: 20px;
         }
         p {
-            font-family: 'Lato';
+           
             margin: 0;
             font-size: 25px;
         }
@@ -366,7 +298,7 @@ body {
     h2 {
         text-align: center;
         font-size: 36px;
-        font-family: 'Rubik';
+        
         padding-bottom: 10px;
     }
     .adv-item {
@@ -395,7 +327,7 @@ body {
                 }
                 h3 {
                     color: black;
-                    font-family: 'Rubik';
+                    
                     font-size: 22px;
                     font-weight: 500;
                     margin: 0;
@@ -404,7 +336,7 @@ body {
                 }
                 p{
                     color: black;
-                    font-family: 'Lato';
+                   
                     font-size: 18px;
                     font-weight: 400;
                     padding-top: 5px;
@@ -472,7 +404,7 @@ body {
     h2 {
         text-align: center;
         font-size: 36px;
-        font-family: 'Rubik';
+        
         padding-bottom: 10px;
     }
     .numbers-item {
@@ -494,7 +426,7 @@ body {
                 padding: 100px 10px  0px 65px;
                 border-radius: 30px; 
                 h3 {
-                    font-family: 'Rubik';
+                   
                     font-size: 22px;
                     font-weight: 600;
                     line-height: 26.07px;
@@ -502,7 +434,7 @@ body {
                 ul {
                     padding-left: 10px;
                     li {
-                        font-family: 'Lato';
+                        
                         font-size: 19px;
                         font-weight: 500;
                         line-height: 19.2px;
@@ -598,7 +530,7 @@ body {
                     font-size: 35px;
                 }
                 .cont-1 {
-                    font-family: 'Rubik';
+                    
                     font-size: 20px;
                     font-weight: 800;
                 }
@@ -651,7 +583,7 @@ body {
         li {
             list-style-type: none;
            a {
-            font-family: 'Lato';
+           
             font-weight: 600;
             font-size: 16px;
             color: black;
@@ -768,7 +700,7 @@ body {
                         height: 75px;
                     }
                     h3 {
-                        font-family: 'Rubik';
+                       
                         font-size: 20px;
                         font-weight: 500;
                         line-height: 28px;
@@ -776,7 +708,7 @@ body {
                         padding-top: 0px;
                     }
                     p{
-                        font-family: 'Lato';
+                        
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 21px;
@@ -859,7 +791,7 @@ body {
                     background-size: 600px 90px;
                     padding: 30px 15px 0px 30px;
                     h3 {
-                        font-family: 'Rubik';
+                        
                         font-size: 22px;
                         font-weight: 600;
                     }
@@ -959,7 +891,7 @@ body {
                         font-size: 30px;
                     }
                     .cont-1 {
-                        font-family: 'Rubik';
+                       
                         font-size: 18px;
                         font-weight: 700;
                     }
@@ -1014,7 +946,7 @@ body {
             li {
                 list-style-type: none;
                a {
-                font-family: 'Lato';
+                
                 font-weight: 600;
                 font-size: 16px;
                 color: black;
@@ -1167,7 +1099,7 @@ body {
         h2 {
             text-align: center;
             font-size: 36px;
-            font-family: 'Rubik';
+            
             padding-bottom: 10px;
         }
         .numbers-item {
@@ -1190,7 +1122,7 @@ body {
                     padding: 10px 10px 15px 30px;
                     border-radius: 25px;
                     h3 {
-                        font-family: 'Rubik';
+                        
                         font-size: 22px;
                         font-weight: 600;
                         line-height: 26.07px;
@@ -1199,7 +1131,7 @@ body {
                         margin-top: -5%;
                         padding-left: 10px;
                         li {
-                            font-family: 'Lato';
+                            
                             font-size: 18px;
                             font-weight: 400;
                             line-height: 19.2px;
@@ -1320,7 +1252,7 @@ body {
             li {
                 list-style-type: none;
                a {
-                font-family: 'Lato';
+               
                 font-weight: 600;
                 font-size: 16px;
                 color: black;

@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f1f1f0;
-  cursor: url(../img/cursor.png), auto;
+  cursor: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/cursor.png), auto;
 }
 
 .modal {
@@ -15,7 +15,7 @@ body {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  background-image: url(../img/paw-log.svg);
+  background-image: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/paw-log.svg);
   background-repeat: no-repeat;
 }
 .modal .close {
@@ -57,7 +57,7 @@ body {
   width: 25%;
 }
 .modal .order-form button {
-  background-image: url(../img/paw-2.svg);
+  background-image: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/paw-2.svg);
   background-size: 36px;
   background-repeat: no-repeat;
   background-position: 97% 7px;
@@ -100,27 +100,28 @@ body {
   list-style-type: none;
 }
 .header-nav .menu-mob li a {
-  font-family: "Lato";
   font-weight: 600;
   font-size: 16px;
   color: black;
   text-decoration: none;
 }
 .header-nav .menu-mob .log {
-  width: 55px;
-  height: 55px;
-  background: #f8f6f6;
-  border-radius: 50%;
-  position: relative;
-  margin-top: -3%;
-  margin-left: 40px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-left: 70px;
+  margin-top: -5px;
 }
-.header-nav .menu-mob .log img {
-  position: absolute;
-  width: 35px;
-  height: 40px;
-  margin: 6px 2px 0px 11px;
+.header-nav .menu-mob .log button {
+  font-size: 17px;
+  border: none;
+  background-color: hsl(18, 95%, 61%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  width: 90px;
+  height: 35px;
+}
+.header-nav .menu-mob .log a {
+  color: white;
+  text-decoration: none;
 }
 
 .popup {
@@ -134,17 +135,13 @@ body {
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  background-image: url(../img/paw-log.svg);
+  background-image: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/paw-log.svg);
   background-repeat: no-repeat;
 }
 .popup .close-btn {
   display: flex;
   justify-content: right;
   padding: 15px;
-}
-
-.popup .registration {
-  display: none;
 }
 
 #check:checked ~ .registration {
@@ -208,7 +205,7 @@ body {
 
 .form input.button {
   color: #ffffff;
-  background-image: url(../img/paw-2.svg);
+  background-image: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/paw-2.svg);
   background-size: 45px;
   background-repeat: no-repeat;
   background-position: 97% 4px;
@@ -239,7 +236,7 @@ body {
 }
 
 .kitty {
-  background-image: url(../img/main-1.png);
+  background-image: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/main-1.png);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -255,22 +252,19 @@ body {
   padding: 100px;
 }
 .kitty .kitty-text h1 {
-  font-family: "Lato";
   margin: 10px 0;
   font-size: 62px;
 }
 .kitty .kitty-text .text-1 {
-  font-family: "Lato";
   margin: 0;
   font-size: 20px;
 }
 .kitty .kitty-text p {
-  font-family: "Lato";
   margin: 0;
   font-size: 25px;
 }
 .kitty .kitty-text button {
-  background-image: url(../img/paw-1.svg);
+  background-image: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/paw-1.svg);
   background-size: 36px;
   background-repeat: no-repeat;
   background-position: 95% 7px;
@@ -305,7 +299,6 @@ body {
 .adv h2 {
   text-align: center;
   font-size: 36px;
-  font-family: "Rubik";
   padding-bottom: 10px;
 }
 .adv .adv-item {
@@ -337,7 +330,6 @@ body {
 }
 .adv .adv-item .adv-items .text-adv h3 {
   color: black;
-  font-family: "Rubik";
   font-size: 22px;
   font-weight: 500;
   margin: 0;
@@ -346,7 +338,6 @@ body {
 }
 .adv .adv-item .adv-items .text-adv p {
   color: black;
-  font-family: "Lato";
   font-size: 18px;
   font-weight: 400;
   padding-top: 5px;
@@ -407,7 +398,6 @@ body {
 .numbers-slider h2 {
   text-align: center;
   font-size: 36px;
-  font-family: "Rubik";
   padding-bottom: 10px;
 }
 .numbers-slider .numbers-item {
@@ -423,14 +413,13 @@ body {
 }
 .numbers-slider .numbers-item .num-text {
   background-color: white;
-  background: url(../img/paw.svg);
+  background: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/paw.svg);
   background-repeat: no-repeat;
   background-size: 500px 100px;
   padding: 100px 10px 0px 65px;
   border-radius: 30px;
 }
 .numbers-slider .numbers-item .num-text h3 {
-  font-family: "Rubik";
   font-size: 22px;
   font-weight: 600;
   line-height: 26.07px;
@@ -439,7 +428,6 @@ body {
   padding-left: 10px;
 }
 .numbers-slider .numbers-item .num-text ul li {
-  font-family: "Lato";
   font-size: 19px;
   font-weight: 500;
   line-height: 19.2px;
@@ -528,7 +516,6 @@ body {
   font-size: 35px;
 }
 .contacts .contacts-item .contacts-text div .cont-1 {
-  font-family: "Rubik";
   font-size: 20px;
   font-weight: 800;
 }
@@ -578,7 +565,6 @@ body {
   list-style-type: none;
 }
 .header-nav-1 .menu li a {
-  font-family: "Lato";
   font-weight: 600;
   font-size: 16px;
   color: black;
@@ -630,7 +616,7 @@ body {
     font-size: 20px;
   }
   .kitty .kitty-text button {
-    background-image: url(../img/paw-1.svg);
+    background-image: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/paw-1.svg);
     background-size: 36px;
     background-repeat: no-repeat;
     background-position: 95% 5px;
@@ -679,7 +665,6 @@ body {
     height: 75px;
   }
   .adv .adv-item .adv-items .text-adv h3 {
-    font-family: "Rubik";
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
@@ -687,7 +672,6 @@ body {
     padding-top: 0px;
   }
   .adv .adv-item .adv-items .text-adv p {
-    font-family: "Lato";
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
@@ -757,13 +741,12 @@ body {
     height: 303px;
   }
   .numbers-slider .num-row .numbers-item .num-text {
-    background: url(../img/paw.svg);
+    background: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/paw.svg);
     background-repeat: no-repeat;
     background-size: 600px 90px;
     padding: 30px 15px 0px 30px;
   }
   .numbers-slider .num-row .numbers-item .num-text h3 {
-    font-family: "Rubik";
     font-size: 22px;
     font-weight: 600;
   }
@@ -854,7 +837,6 @@ body {
     font-size: 30px;
   }
   .contacts .contacts-item .contacts-text div .cont-1 {
-    font-family: "Rubik";
     font-size: 18px;
     font-weight: 700;
   }
@@ -903,7 +885,6 @@ body {
     list-style-type: none;
   }
   .header-nav-1 .menu li a {
-    font-family: "Lato";
     font-weight: 600;
     font-size: 16px;
     color: black;
@@ -1047,7 +1028,6 @@ body {
   .numbers-slider h2 {
     text-align: center;
     font-size: 36px;
-    font-family: "Rubik";
     padding-bottom: 10px;
   }
   .numbers-slider .numbers-item {
@@ -1065,14 +1045,13 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: url(../img/paw.svg);
+    background: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/paw.svg);
     background-repeat: no-repeat;
     background-size: 600px 90px;
     padding: 10px 10px 15px 30px;
     border-radius: 25px;
   }
   .numbers-slider .numbers-item .num-text h3 {
-    font-family: "Rubik";
     font-size: 22px;
     font-weight: 600;
     line-height: 26.07px;
@@ -1082,7 +1061,6 @@ body {
     padding-left: 10px;
   }
   .numbers-slider .numbers-item .num-text ul li {
-    font-family: "Lato";
     font-size: 18px;
     font-weight: 400;
     line-height: 19.2px;
@@ -1093,7 +1071,7 @@ body {
     font-size: 25px;
   }
   .numbers-slider .numbers-item .num-text button {
-    background-image: url(../img/paw-2.svg);
+    background-image: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/paw-2.svg);
     background-size: 36px;
     background-repeat: no-repeat;
     background-position: 95% 7px;
@@ -1189,7 +1167,6 @@ body {
     list-style-type: none;
   }
   .header-nav-1 .menu li a {
-    font-family: "Lato";
     font-weight: 600;
     font-size: 16px;
     color: black;
