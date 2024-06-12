@@ -224,7 +224,27 @@ header {
             }
         }
      
-    }  
+    }
+    .popup{
+        top: 50%;
+        left: 50%;
+        transform: translate(50%,35%);
+        max-width: 430px;
+        width: 100%;
+        border-radius: 7px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        background-image: url(../../../../../../Users/sides/Documents/GitHub/kitty-house/img/paw-log.svg);
+        background-repeat: no-repeat;
+        .close-btn {
+            display: flex;
+            justify-content: right;
+            padding: 15px;
+        }
+        h1 {
+            text-align: center;
+            font-weight: 500;
+        }
+      }  
     .footer-info {
         display: flex;
         flex-direction: row;
